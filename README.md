@@ -11,26 +11,13 @@ A custom Home Assistant card for visualizing and interacting with Froeling syste
 
 ## Installation
 
-### Option 1: Installation via HACS (recommended)
+### via HACS (recommended)
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=GyroGearl00se&repository=lovelace-froeling-card&category=Dashboard)
 
 1. Ensure that [HACS](https://hacs.xyz/) is installed in your Home Assistant setup.
 3. Search for "Froeling Card" in HACS and install it.
 4. Restart Home Assistant.
 
-### Option 2: Manual Installation
-1. Download the latest release from the [GitHub releases page](https://github.com/GyroGearl00se/lovelace-froeling-card/releases).
-2. Copy the `dist` folder to your Home Assistant `www/custom_cards/froeling-card/` directory.
-3. Add the following to your `configuration.yaml`:
-
-```yaml
-lovelace:
-  resources:
-    - url: /local/custom_cards/froeling-card/dist/froeling-card.js
-      type: module
-```
-
-4. Restart Home Assistant.
 
 ## Usage
 
