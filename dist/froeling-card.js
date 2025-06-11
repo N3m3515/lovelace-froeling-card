@@ -118,7 +118,7 @@ class BaseFroelingCard extends HTMLElement {
 class FroelingKesselCard extends BaseFroelingCard {
     constructor() {
         super();
-        this.svgUrl = '/local/custom_cards/froeling-card/kessel.svg';
+        this.svgUrl = '/local/community/lovelace-froeling-card/kessel.svg';
     }
 
     static getStubConfig() {
@@ -189,7 +189,7 @@ customElements.define('froeling-kessel-card', FroelingKesselCard);
 class FroelingHeizkreisCard extends BaseFroelingCard {
     constructor() {
         super();
-        this.svgUrl = '/local/custom_cards/froeling-card/heizkreis.svg';
+        this.svgUrl = '/local/community/lovelace-froeling-card/heizkreis.svg';
     }
 
     static getStubConfig() {
@@ -224,7 +224,7 @@ customElements.define('froeling-heizkreis-card', FroelingHeizkreisCard);
 class FroelingAustragungCard extends BaseFroelingCard {
     constructor() {
         super();
-        this.svgUrl = '/local/custom_cards/froeling-card/austragung.svg';
+        this.svgUrl = '/local/community/lovelace-froeling-card/austragung.svg';
     }
 
     static getStubConfig() {
@@ -254,7 +254,7 @@ customElements.define('froeling-austragung-card', FroelingAustragungCard);
 class FroelingBoilerCard extends BaseFroelingCard {
     constructor() {
         super();
-        this.svgUrl = '/local/custom_cards/froeling-card/boiler.svg';
+        this.svgUrl = '/local/community/lovelace-froeling-card/boiler.svg';
     }
 
     static getStubConfig() {
@@ -288,7 +288,7 @@ customElements.define('froeling-boiler-card', FroelingBoilerCard);
 class FroelingPufferCard extends BaseFroelingCard {
     constructor() {
         super();
-        this.svgUrl = '/local/custom_cards/froeling-card/puffer.svg';
+        this.svgUrl = '/local/community/lovelace-froeling-card/puffer.svg';
     }
 
     static getStubConfig() {
@@ -332,7 +332,7 @@ customElements.define('froeling-puffer-card', FroelingPufferCard);
 class FroelingZirkulationspumpeCard extends BaseFroelingCard {
     constructor() {
         super();
-        this.svgUrl = '/local/custom_cards/froeling-card/zirkulationspumpe.svg';
+        this.svgUrl = '/local/community/lovelace-froeling-card/zirkulationspumpe.svg';
     }
 
     static getStubConfig() {
