@@ -485,6 +485,14 @@ if (window.customCards) {
             documentationURL: "https://github.com/GyroGearl00se"
         },
         {
+            type: "froeling-festholzkessel-card",
+            name: "Froeling Festholzkessel Card",
+            description: "Visuelle Darstellung Fröling - Festholzkessel",
+            preview: true,
+            editor: "froeling-card-editor",
+            documentationURL: "https://github.com/GyroGearl00se"
+        },
+        {
             type: "froeling-heizkreis-card",
             name: "Froeling Heizkreis Card",
             description: "Visuelle Darstellung Fröling - Heizkreis",
@@ -512,6 +520,14 @@ if (window.customCards) {
             type: "froeling-puffer-card",
             name: "Froeling Puffer Card",
             description: "Visuelle Darstellung Fröling - Puffer",
+            preview: true,
+            editor: "froeling-card-editor",
+            documentationURL: "https://github.com/GyroGearl00se"
+        },
+        {
+            type: "froeling-puffer-3temp-card",
+            name: "Froeling 3temp-Puffer Card",
+            description: "Visuelle Darstellung Fröling - Puffer mit 3 Temperaturen",
             preview: true,
             editor: "froeling-card-editor",
             documentationURL: "https://github.com/GyroGearl00se"
