@@ -186,6 +186,67 @@ class FroelingKesselCard extends BaseFroelingCard {
 
 customElements.define('froeling-kessel-card', FroelingKesselCard);
 
+class FroelingFestholzkesselCard extends BaseFroelingCard {
+    constructor() {
+        super();
+        this.svgUrl = '/local/community/lovelace-froeling-card/festholzkessel.svg';
+    }
+
+    static getStubConfig() {
+        return {
+            entities: [
+                {
+                    id: 'txt_fan-rpm',
+                    entity: 'sensor.froeling_saugzugdrehzahl',
+                    label: 'Drehzahl des Saugzuggebläses'
+                },
+                {
+                    id: 'txt_boiler-temp',
+                    entity: 'sensor.froeling_kesseltemperatur',
+                    label: 'Kesseltemperatur'
+                },
+                {
+                    id: 'txt_flue-gas',
+                    entity: 'sensor.froeling_abgastemperatur',
+                    label: 'Abgastemperatur'
+                },
+                {
+                    id: 'txt_lambda',
+                    entity: 'sensor.froeling_restsauerstoffgehalt',
+                    label: 'Restsauerstoffgehalt'
+                },
+                {
+                    id: 'txt_pump-01-rpm',
+                    entity: 'sensor.froeling_puffer_1_pufferpumpen_ansteuerung',
+                    label: 'Pufferpumpen Ansteuerung'
+                },
+                {
+                    id: 'obj_flame',
+                    entity: 'sensor.froeling_kesselzustand',
+                    label: 'Kesselzustand',
+                    stateClasses: {
+                        'Vorheizen': 'stHeatingOn',
+                        'Heizen': 'stHeatingOn',
+                        'SH Heizen': 'stHeatingOn',
+                        'default': 'stHeatingOff'
+                    }
+                },
+                {
+                    id: 'obj_pump',
+                    entity: 'binary_sensor.froeling_puffer_1_pumpe_an_aus',
+                    label: 'Pufferpumpe AN AUS',
+                    stateClasses: {
+                        'on': 'stPumpActive',
+                        'default': 'stPumpInActive',
+                    }
+                }
+            ]
+        };
+    }
+}
+
+customElements.define('froeling-festholzkessel-card', FroelingFestholzkesselCard);
+
 class FroelingHeizkreisCard extends BaseFroelingCard {
     constructor() {
         super();
@@ -328,6 +389,55 @@ class FroelingPufferCard extends BaseFroelingCard {
     }
 }
 customElements.define('froeling-puffer-card', FroelingPufferCard);
+
+class FroelingPuffer3tempCard extends BaseFroelingCard {
+    constructor() {
+        super();
+        this.svgUrl = '/local/community/lovelace-froeling-card/puffer_3temp.svg';
+    }
+
+    static getStubConfig() {
+        return {
+            entities: [
+                {
+                    id: 'txt_pump-01-rpm',
+                    entity: 'sensor.froeling_puffer_1_pufferpumpen_ansteuerung',
+                    label: 'Pufferpumpen Ansteuerung'
+                },
+                {
+                    id: 'txt_buffer-load',
+                    entity: 'sensor.froeling_puffer_1_ladezustand',
+                    label: 'Ladezustand des Pufferspeichers'
+                },
+                {
+                    id: 'txt_buffer-lower-sensor',
+                    entity: 'sensor.froeling_puffer_1_temperatur_unten',
+                    label: 'Tempertaur unten im Pufferspeicher'
+                },
+                {
+                    id: 'txt_buffer-middle-sensor',
+                    entity: 'sensor.froeling_puffer_1_temperatur_mitte',
+                    label: 'Tempertaur mitte im Pufferspeicher'
+                },
+                {
+                    id: 'txt_buffer-upper-sensor',
+                    entity: 'sensor.froeling_puffer_1_temperatur_oben',
+                    label: 'Tempertaur oben im Pufferspeicher'
+                },
+                {
+                    id: 'obj_pump',
+                    entity: 'binary_sensor.froeling_puffer_1_pumpe_an_aus',
+                    label: 'Pufferpumpe AN AUS',
+                    stateClasses: {
+                        'on': 'stPumpActive',
+                        'default': 'stPumpInActive',
+                    }
+                }
+            ]
+        };
+    }
+}
+customElements.define('froeling-puffer-3temp-card', FroelingPuffer3tempCard);
 
 class FroelingZirkulationspumpeCard extends BaseFroelingCard {
     constructor() {
